@@ -1,5 +1,5 @@
 # SmartMethods-Task3
-Live version: 
+Live version: https://alyasgit.github.io/SmartMethods-Task3/
 
 - Created a chat bot for a simple restaurant reservation. 
   You get to choose between reserving a table or chowing some info about the restaurant.
