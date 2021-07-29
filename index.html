@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SmartMethods - Task 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+
+    <body style="background-image: url('techBG.png');">
+        <div class="d-flex justify-content-center  text-center">
+            <div style="background-color: #263a4d; " class="p-3 mt-5 rounded border border-secondary" >
+            <form form action="uploadToDB.php" method="POST">
+                <div class="container mb-4">
+                
+                 <button type="submit" name="forward" class="btn btn-primary">Forward</button>
+</div>
+              <div class="p-1 mt-3" >
+                  <button type="submit" name="left" class="btn btn-primary">Left</button>
+                <button type="submit" name="stop" class="btn btn-danger">Stop</button>
+                <button type="submit" name="right" class="btn btn-primary">Right</button>
+                <div class="p-1 mt-3" >
+                  <button type="submit" name="backward" class="btn btn-primary">Backward</button>
+                </div>
+                </form>
+          </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src ="javascript.js"></script>
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "801f1d50-f00f-43ca-b275-7fb4de7c9fe2", // The ID of this integration.
+                region: "eu-gb", // The region your integration is hosted in.
+                serviceInstanceID: "482d20db-97ac-4839-9bc5-d496a498440d", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    </body>
+</html>
