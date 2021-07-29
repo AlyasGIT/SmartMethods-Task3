@@ -1,4 +1,6 @@
 # SmartMethods-Task3
+Live version: 
+
 - Created a chat bot for a simple restaurant reservation. 
   You get to choose between reserving a table or chowing some info about the restaurant.
   Added simple conditions for misinputs and steps between the choices.
