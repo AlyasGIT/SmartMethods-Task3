@@ -1,0 +1,1 @@
+# SmartMethods-Task3
